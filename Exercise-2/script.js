@@ -51,8 +51,15 @@ for (let i = 0; i < paragraph.length; i++) {
    leave it as it is.
 */
 
-
+// give one random color for all the paragraph
+var randomColor = Math.floor(Math.random()*16777215).toString(16);
 paragraph.forEach(function(p){
-  var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  p.style.background ='#'+randomColor;
+    p.style.background ='#'+randomColor;
+  })
+
+// create random color every loop and give different random colors for each paragraph
+paragraph.forEach(function(p){
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    p.style.background ='#'+randomColor;
+    console.log('#'+randomColor)
   })
