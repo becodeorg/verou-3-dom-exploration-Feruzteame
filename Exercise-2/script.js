@@ -24,14 +24,13 @@ console.log(img)
 for (let i = 0; i < img.length; i++) {
     
   if(img[i].className === "important"){
-                img[i].style.display="block";
-                console.log(img)
-          }else{
-            img[i].style.display="none";
-            console.log(img)
-            
-          }
-        }
+        img[i].style.display="block";
+        console.log(img)
+  }else{
+        img[i].style.display="none";
+        console.log(img)
+      }
+    }
 
 
 /* Loop through all the paragraphs and display their content in the console. If the paragraph has a class,
@@ -43,7 +42,7 @@ console.log(paragraph)
 
 
 for (let i = 0; i < paragraph.length; i++) {
-  console.log(paragraph[i].innerHTML)
+  console.log(paragraph[i].innerText) // innerHtml and innerText
   console.log(paragraph[i].className)
    }
 
@@ -54,7 +53,7 @@ for (let i = 0; i < paragraph.length; i++) {
 // give one random color for all the paragraph
 var randomColor = Math.floor(Math.random()*16777215).toString(16);
 paragraph.forEach(function(p){
-    p.style.background ='#'+randomColor;
+    p.style.color ='#'+randomColor;
   })
 
 // create random color every loop and give different random colors for each paragraph
@@ -63,3 +62,5 @@ paragraph.forEach(function(p){
     p.style.background ='#'+randomColor;
     console.log('#'+randomColor)
   })
+
+
