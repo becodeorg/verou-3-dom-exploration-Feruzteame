@@ -5,43 +5,27 @@
 
    
 const array = [
-    "Ahmad",
-    "Jian",
-    "Michael",
-    "Dante",
-    "Muhammet",
-    "Nicolas",
-    "Jordy",
-    "Beryl",
-    "Cynthia",
-    "Ruben",
-    "Magali",
-    "Jawid",
-    "Koen",
-    "Kevin",
-    "Benjamin",
-    "Dery",
-    "Michelle",
-    "Colin",
-    "Feruz",
-    "Pieter",
-    "Ellen",
-    "Sara"
-]
+    "Ahmad","Jian","Michael","Dante",
+    "Muhammet","Nicolas","Jordy","Beryl","Cynthia",
+    "Ruben","Magali","Jawid","Koen","Kevin","Benjamin",
+    "Dery","Michelle","Colin","Feruz","Pieter","Ellen","Sara"
+    ]
 
 for(let i=0; i < array.length; i++){
+
       // create section and insert array  
       const newSection = document.createElement("section");
       const newContent = document.createTextNode(array[i]);
-      newSection.appendChild(newContent);;
+      newSection.appendChild(newContent);
      // create article include the section and article append to the body
      const newArticle = document.createElement("article");
      newArticle.appendChild(newSection)
      document.body.appendChild(newArticle);
     // some section style
      newSection.className = "section-container"
-     newSection.style.margin ="10px";
-     console.log(newSection.length)
+     newSection.style.margin = "10px";
+     newSection.style.display = "flex";
+     console.log(newArticle.length)
 
 }
 
@@ -51,7 +35,9 @@ const container = document.getElementsByClassName("section-container")
     container[i].style.background ='#'+randomColor;
   }
 
-    /*
-If the background is dark the text should be white, if the background is light the text should be black*/
+  //document.body.onload = changeOrder;
+
+
 
 /*Find a way so that everytime you load the page the order of the elements changes!*/
+

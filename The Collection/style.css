@@ -1,0 +1,21 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 2%;
+    margin: 2%;
+}
+.musicPic{
+    width: 300px;
+    height: 200px;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    
+}
+.title{
+    color: green;
+    font-weight: bold;
+    font-size: larger;
+    margin: 1% 0 -2% 0;
+}
