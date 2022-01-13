@@ -1,20 +1,60 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    margin: -2% 0 -3% -3%;
+}
+.logo2{
+     margin: -12% 0 -3% -3%; 
+     float: right; 
+}
+nav ul .nav-link{
+    color: red;
+    font-weight: bold;
+    margin-top: -20px;
+}
+article{
+    margin: 0%  0% 0 0;
+    overflow-x:scroll;
+    position:fixed;
+    width: 100%;
+}
+article #music{
+    width: 100%;
+    padding: 0%;
+    height: 600px;
+    margin-left: 0%;
+    margin-top: -5%;
+ 
+}
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: green;
+     border-radius: 0px;
+     }
+
+
+#section-container{
+   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 2%;
-    margin: 2%;
+    margin-left: 10%;
 }
 .musicPic{
     width: 300px;
     height: 200px;
 }
-.box-container{
+div{
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
     
 }
 .title{
-    color: green;
+    color: rgb(29, 187, 29);
     font-weight: bold;
     font-size: larger;
     margin: 1% 0 -2% 0;
