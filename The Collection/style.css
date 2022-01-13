@@ -95,23 +95,25 @@ footer{
         grid-template-columns: 100%;
     }
     .logo2{
-        margin: -5% 0 10% 30%;
+        display: none;
    }
    ul {
     width: 100%;
-    margin-left: 0;
+    margin: 0 0 0 0;
+
 }
 ul a{
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 15px;
 }
-/* .icon{
-    display: none;
-} */
 #section-container{
+    display: grid;
     grid-template-columns: 1fr;
-    margin: 30% 0 0 15%;
+    grid-gap: 2%;
+    margin: 5% 0 0 20%;
     height: 700px;
+    overflow-y: scroll;
+    position: relative;
    
 }
 div{
@@ -128,4 +130,7 @@ div{
         width: 200px;
         height: 100px;
     }
-}
+    
+
+ }
+
