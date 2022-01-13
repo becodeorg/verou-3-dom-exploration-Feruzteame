@@ -92,22 +92,26 @@ footer{
 
 @media only screen and (max-width: 600px){
 	nav{
-        grid-template-columns: 10% 80%;
+        grid-template-columns: 100%;
     }
     .logo2{
-        margin: -65% 0 0% -100%;
+      display: none;
    }
    ul {
-    width: 90%;
+    width: 100%;
+    margin-left: 0;
+}
+ul a{
+    font-weight: lighter;
+    font-size: 15px;
+}
+.icon{
+    display: none;
 }
 #section-container{
-    display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2%;
-    margin: 5% 0 0 20%;
-    height: 700px;
-    overflow-y: scroll;
-    position: relative;
+    margin: 5% 0 0 15%;
+    height: 500px;
    
 }
 div{
@@ -115,7 +119,13 @@ div{
     grid-template-columns: 1fr;
     grid-gap: 2%;
     margin-top: 1%;
-    width: 90%;
-    
- }
+    width: 70%;
+    }
+    article{
+        margin: -10%  0% 0 0;
+     }
+     .musicPic{
+        width: 200px;
+        height: 100px;
+    }
 }
