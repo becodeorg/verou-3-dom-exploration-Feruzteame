@@ -19,6 +19,7 @@ for(let i = 0; i < collections.length; i++){
     const name= document.createTextNode(collections[i].name)  
     const time= document.createTextNode(collections[i].time)  
     const loveImg = document.createElement("img")
+    loveImg.className="love"
     loveImg.setAttribute("src", "https://img.icons8.com/material-outlined/24/000000/filled-like.png")
     // append to the div
     const lineBreak = document.createElement("br");
