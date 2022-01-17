@@ -1,21 +1,45 @@
-.displayedsquare{
-
-    display: flex;
-    margin: 5% 10% 10% 30%;
-}
-#div-1{
+body{
+    margin: auto;
+    transition: .3s;
+  }
+  
+  .actionsquare, .displayedsquare{
+    margin: 25px;
+    height: 50px;
+    width: 50px;
+    transition: .3s;
+  }
+  
+  .actionsquare:hover{
+    transform: scale(1.5);
+  }
+  
+  .green{
     background-color: lime;
-    width: 50px;
-    height: 50px;
-}
-#div-2{
-    background-color: violet;
-    width: 50px;
-    height: 50px;
-    padding: 10%;
-}
-#div-3{
+  }
+  
+  .violet{
+    background-color: magenta;
+  }
+  
+  .orange{
     background-color: orange;
-    width: 50px;
-    height: 50px;
-}
+  }
+  
+  .actionsquare-wrapper, .displayedsquare-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  main{
+    max-width: 1000px;
+    margin: 100px auto;
+  }
+
+  .newList{
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      display:inline-block;
+  }
+  

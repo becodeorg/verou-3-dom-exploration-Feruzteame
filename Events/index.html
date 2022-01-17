@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
-    <div id="listContainer"></div>
-    <div class="displayedsquare">
-       <div>
-           <button id="div-1"></button>
-        </div>
-       <div >
-            <button id="div-2"></button>
-       </div>
-       <div>
-           <button id="div-3"></button>
-
-       </div>
-    </div>
+    <main>
+        <section class="displayedsquare-wrapper">
+          <!-- Dynamically put the squares in here -->
+        </section>
+    
+        <section>
+          <div class="actionsquare-wrapper">
+            <div class="actionsquare green" id="lime"></div>
+            <div class="actionsquare violet" id="violet"></div>
+            <div class="actionsquare orange" id="orange"></div>
+          </div>
+        </section>
+    
+        <section class="listContainer">
+          <h2>Action log</h2>
+    
+          <ul id="ulList">
+            <!-- Dynamically put the logs in here -->
+          </ul>
+        </section>
+      </main>
   
-    <script src="./main.js"></script>
-    <script src="./event.js"></script>
+    <script src="./main.js" type="text/javascript" ></script>
 </body>
 </html>
