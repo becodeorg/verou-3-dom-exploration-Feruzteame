@@ -7,17 +7,17 @@ function Timer() {
         // select timing place
         const timing = document.getElementById('time')
         const list = document.createElement('LI')
-        list.innerHTML =`${minuteTimer}.${secondTimer }s` // this is not jquery, es6 javascript literals template
+        list.innerHTML =`[${minuteTimer}.${secondTimer }s] Created a new square` // this is not jquery, es6 javascript literals template
         timing.appendChild(list)
         // KeyI event to delete list
         window.addEventListener('keydown', function(e) {
         if(e.code === "KeyI"){
-        list.style.display = "none"
-           }
-        })
+        list.remove()
+           }})
    }
  // change background color with key space  
 window.addEventListener('keydown', function(e) {
+   
        if(e.code === "Space"){
         document.body.style.background = "black"
         document.body.style.color = "white"
@@ -47,12 +47,10 @@ function createList(e){
        // delete div with keyS
        window.addEventListener('keydown', function(e) {
             if(e.code === "KeyS"){
-            div.style.display = "none"
+            div.remove()
         }})
     }
 
- 
- 
 // add event Listener
 const div1 = document.getElementById('lime')
 const div2 = document.getElementById('violet')
