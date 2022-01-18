@@ -6,3 +6,4 @@
 - [Collection project](https://becodeorg.github.io/verou-3-dom-exploration-Feruzteame/The%20Collection/collection.html)
 - [Navigate](https://becodeorg.github.io/verou-3-dom-exploration-Feruzteame/Navigate/index.html)
 - [Event](https://becodeorg.github.io/verou-3-dom-exploration-Feruzteame/Events/index.html)
+- [Forms](https://becodeorg.github.io/verou-3-dom-exploration-Feruzteame/Forms/index.html)
