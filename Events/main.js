@@ -1,20 +1,42 @@
 
+var timer = 0;
+
+function Timer() {
+    // create time
+    time = new Date();
+    const minuteTimer = time.getMinutes() 
+    const secondTimer = time.getSeconds() 
+    // select timing place
+    const timing = document.getElementById('time')
+    const list = document.createElement('LI')
+    list.innerHTML =`${minuteTimer}.${secondTimer }s` // this is not jquery, es6 javascript literals template
+    timing.appendChild(list)   
+   }
+
+
 // Function
 function createList(e){
-    const ul = document.getElementById('ulList')
-    let list = document.createElement("LI")
-    list.className = "newList";
+    // select container
+    const box = document.getElementById('displayedsquare')
+    // create sub-container
+    const subContainer = document.createElement('DIV')
+    // create boxes
+    let div = document.createElement("DIV")
+    div.className = "newList";
     const bgColor = e.target.id
-    console.log(bgColor)
-    list.style.background = bgColor
-    ul.appendChild(list)
-
-    list.addEventListener('mouseover', function colorAlert(){
-                                    alert('The background color is ' + bgColor )})
+    div.style.background = bgColor
+    //append box to containers
+    subContainer.appendChild(div)
+    box.appendChild(subContainer)
+    // mouseover function of created box
+    div.addEventListener('mouseover', function colorAlert(){
+    alert(`The background color is ${bgColor}`)})
+   // call timer function
+   Timer()
    }
 
  
-// addeventListener
+// add event Listener
 const div1 = document.getElementById('lime')
 const div2 = document.getElementById('violet')
 const div3 = document.getElementById('orange')
@@ -25,7 +47,3 @@ div3.addEventListener('click', createList)
 
 
 
-
-//  const newList = document.getElementsByClassName('newList')
-//  console.log(newList)
-//  newList.addEventListener('click',colorAlert )
