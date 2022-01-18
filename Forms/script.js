@@ -20,8 +20,15 @@ window.addEventListener('keyup', function pwdConfirm(){
     const pwd = document.getElementById("pwd").value
     const pwdLength = pwd.length
     const pwdConfirm = document.getElementById("pwd-confirm").value
-   if( pwdLength <= 6 && pwd != pwdConfirm){
-     alert("Sorry ! your pwd must be 6 character and make sure pwdConfirm is the same as pwd. ")
+   if( pwdLength <= 6 && pwd != pwdConfirm){ 
+    document.getElementById("pwd").style.background = "red" 
+   }
+   else if(pwd != pwdConfirm){
+    document.getElementById("pwd-confirm").style.background = "red" 
+  }
+  else{
+    document.getElementById("pwd").style.background = "white" 
+    document.getElementById("pwd-confirm").style.background = "white" 
    }
 })
 
