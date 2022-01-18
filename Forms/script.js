@@ -20,7 +20,7 @@ window.addEventListener('keyup', function pwdConfirm(){
     const pwd = document.getElementById("pwd").value
     const pwdLength = pwd.length
     const pwdConfirm = document.getElementById("pwd-confirm").value
-   if( pwdLength <= 6 && pwd != pwdConfirm){ 
+   if( pwdLength <= 6){ 
     document.getElementById("pwd").style.background = "red" 
    }
    else if(pwd != pwdConfirm){
