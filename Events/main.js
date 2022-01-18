@@ -13,7 +13,7 @@ function Timer() {
         window.addEventListener('keydown', function(e) {
         if(e.code === "KeyI"){
         list.style.display = "none"
-        }
+           }
         })
    }
  // change background color with key space  
@@ -39,7 +39,7 @@ function createList(e){
         subContainer.appendChild(div)
         box.appendChild(subContainer)
         // mouseover function of created box
-        div.addEventListener('mouseover', function colorAlert(){
+        div.addEventListener('click', function colorAlert(){
            alert(`The background color is ${bgColor}`)
          })
        // call timer function
